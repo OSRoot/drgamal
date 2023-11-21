@@ -1,0 +1,220 @@
+* {
+    // padding: 0;
+    // margin: 0;
+    text-decoration: none !important;
+    text-align: left;
+body {
+    font-family: 'Roboto', sans-serif;
+    /* height: 5000px; */  
+   
+}
+
+.home-r{
+    cursor: pointer;
+    
+}
+}
+.header,
+.header-2 {
+    background-color: #486287;
+    // direction: rtl;
+}
+.header .img img,
+.header-2 .img img {
+    width: 50px;
+}
+.header ul {
+    gap: 0 40px;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+    @media screen and (max-width: 902px) {
+        gap: 0 13px;
+    }
+}
+.header ul li {
+    position: relative;
+    /* padding: 30px 0; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+}
+.header ul li a {
+    color: white;
+}
+.header ul li::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: center bottom;
+    transition: 0.3s;
+}
+.header ul li:hover::before {
+    transform: scaleX(1);
+}
+.header ul li.active::before {
+    transform: scaleX(1);
+}
+.header-2 {
+    // position: relative;
+    position: sticky;
+}
+.header-2 .menu-icon {
+    gap: 6px 0;
+    cursor: pointer;
+    height: fit-content;
+    z-index: 20;
+}
+.header-2 .menu-icon span {
+    display: block;
+    height: 2px;
+    width: 25px;
+    background-color: white;
+    transition: 0.3s;
+    transform: rotate(0);
+    transform-origin: center center;
+}
+.header-2 .menu-icon span:nth-child(2) {
+    width: 20px;
+    opacity: 1;
+}
+.header-2 .menu-icon.active {
+    gap: 0;
+    align-items: center !important;
+}
+.header-2 .menu-icon.active span:nth-child(2) {
+    transform: rotate(-40deg);
+}
+.header-2 .menu-icon.active span:first-child{
+    transform: rotate(-40deg);
+    margin-bottom: -2px;
+}
+.header-2 .menu-icon.active span:last-child{
+    transform: rotate(40deg);
+    margin-top: -2px;
+}
+.header-2 .dpn {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    position: absolute;
+    top: -340%;
+    width: 100%;
+    background-color: #486287;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+.header-2 .dpn.active {
+    top: 0;
+}
+.header-2 .dpn li {
+    width: fit-content;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.header-2 .dpn li::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: center bottom;
+    transition: 0.3s;
+}
+.header-2 .dpn li:hover::before {
+    transform: scaleX(1);
+}
+.header-2 .dpn li.active::before {
+    transform: scaleX(1);
+}
+
+
+.footer {
+    background-color: #304563;
+    color: white;
+    direction: ltr;
+    img{
+        width: auto;
+    }
+}
+.footer .gridy {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 280px 270px 300px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+@media screen and (max-width: 992px) {
+    .footer .gridy {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .footer .gridy {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+}
+.links{
+    border-bottom: none;
+}
+.mail{
+    color: white;
+    &:hover{
+    color: var(--yellow);
+}
+}
+
+.footer .gridy .g-item .links a {
+    color: white;
+    transition: 0.3s;
+}
+.footer .gridy .g-item .links a:hover {
+    color: #D2A74C;
+}
+.footer .gridy .g-item form .inputs {
+    gap: 20px;
+}
+.footer .gridy .g-item form input {
+    background-color: transparent;
+    border: 1px white solid;
+    color: white;
+    border-radius: 10px;
+    outline: none !important;
+    transition: 0.3s;
+}
+.footer .gridy .g-item form input:focus {
+    border-color: #D2A74C;
+}
+.footer .gridy .g-item form input::placeholder {
+    color: white;
+}
+.footer .gridy .g-item form input.submit {
+    background-color: #D2A74C;
+    border: none;
+    transition: 0.3s;
+}
+.footer .gridy .g-item form input.submit:hover {
+    background-color: #f5c866;
+}
+
+.container{
+    // max-width: 80%;
+    margin: auto;
+}

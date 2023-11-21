@@ -1,0 +1,17 @@
+<div class="os-container">
+    
+<!-- ////////////////////////////////////////////////////////////////////////// -->
+        <div class="os-loading" *ngIf="!blog">
+            <app-spinner></app-spinner>
+        </div>
+<!-- ////////////////////////////////////////////////////////////////////////// -->
+    
+    <div class="os-title">
+        <!-- <h3>{{blog.title }}</h3> -->
+    </div>
+<!-- ////////////////////////////////////////////////////////////////////////// -->
+<div class="os-cards">
+        <div class="os-card" [innerHTML]="blog.description">
+        </div>
+    </div>
+</div>

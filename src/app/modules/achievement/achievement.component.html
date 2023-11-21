@@ -1,0 +1,294 @@
+
+<div class="heading py-4">
+    <div class="container">
+        <h1 class="text-capitalize fw-bold">Achievements & Awards</h1>
+    </div>
+</div>
+
+<div class="banner">
+    <div class="container">
+        <div class="img">
+            <img class="img-fluid" src="assets\images\achievement.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<!-- <div *ngFor="let item of achievements">
+    {{item}}
+</div> -->
+<div class="posts py-5">
+    <div class="container">
+        <div class="gridy mx-auto">
+            <div class="post p-0" *ngFor="let achieve of achievements">
+                <div class="img">
+                    <img [defaultImage]="'../../../assets/lazy.png'"  [lazyLoad]="achieve.image_url" alt=""/>
+                    <!-- <img  > -->
+                </div>
+                <div class="content p-3">
+                    <p class="text-black-50 mb-3">{{achieve.description}}</p>
+                </div>
+            </div>
+
+
+<!-- 
+            <div class="post p-0">
+                <div class="img">
+                    <img src="assets\images\certificates\11.jpeg" alt="" >
+                </div>
+                <div class="content p-3">
+                    <p class="text-black-50 mb-3">Certificate of participation in the 4th edition of the African Women's summit.</p>
+                </div>
+            </div>
+
+            <div class="post p-0">
+                <div class="img">
+                    <img src="assets\images\certificates\1.jpg" alt="" >
+                </div>
+                <div class="content p-3">
+                    <p class="text-black-50 mb-3">Certificate of passing the arbitration program in investment disputes and the form of legal contracts.</p>
+                </div>
+            </div>
+            <div class="post p-0">
+                <div class="img">
+                    <img src="assets\images\certificates\2.jpg" alt="">
+                </div>
+                <div class="content p-3">
+                    <p class="text-black-50 mb-3">Certificate to Cooperate with Animal Health Research Institute.</p>
+                </div>
+            </div>
+
+
+            <div class="post p-0">
+                <div class="img">
+                    <img src="assets\images\certificates\3.jpg" alt="">
+                </div>
+                <div class="content p-3">
+                    <p class="text-black-50 mb-3">Certificate to Pass the arbitration program for investment disputes and drafting legal contracts.</p>
+                </div>
+            </div>
+
+
+            <div class="post p-0">
+                <div class="img">
+                    <img src="assets\images\certificates\4.jpg" alt="">
+                </div>
+                <div class="content p-3">
+                    <p class="text-black-50 mb-3">Certificate to Attend the integrated training program to deepen the idea of self-employment.</p>
+                </div>
+            </div>
+
+
+            <div class="post p-0">
+                <div class="img">
+                    <img src="assets\images\certificates\5.jpg" alt="">
+                </div>
+                <div class="content p-3">
+                    <p class="text-black-50 mb-3">Certificate to protect the immune system and improve poultry productivity.</p>
+                </div>
+            </div>
+
+
+
+            <div class="post p-0">
+                <div class="img">
+                    <img src="assets\images\certificates\6.jpg" alt="">
+                </div>
+                <div class="content p-3">
+                    <p class="text-black-50 mb-3">Certificate for contribution in the field of veterinary convoys.</p>
+                </div>
+            </div>
+
+
+            <div class="post p-0">
+                <div class="img">
+                    <img src="assets\images\certificates\7.jpg" alt="">
+                </div>
+                <div class="content p-3">
+                    <p class="text-black-50 mb-3">Certificate to pass the arbitration advisors preparation program approved by the International Arbitration Commission.</p>
+                </div>
+            </div>
+
+
+            <div class="post p-0">
+                <div class="img">
+                    <img src="assets\images\certificates\8.jpg" alt="">
+                </div>
+                <div class="content p-3">
+                    <p class="text-black-50 mb-3">Certificate to participate in attending the activities of the first qualifying session.</p>
+                </div>
+            </div>
+
+
+            <div class="post p-0">
+                <div class="img">
+                    <img src="assets\images\certificates\9.jpg" alt="">
+                </div>
+                <div class="content p-3">
+                    <p class="text-black-50 mb-3">Certificate of a course in the foundations of successful trading with China.</p>
+                </div>
+            </div>
+
+
+            <div class="post p-0">
+                <div class="img">
+                    <img src="assets\images\certificates\10.jpg" alt="">
+                </div>
+                <div class="content p-3">
+                    <p class="text-black-50 mb-3">Certificate to attend events of Arab-African investment and international cooperation.</p>
+                </div>
+            </div>
+
+
+            <div class="post p-0">
+                <div class="img">
+                    <img src="assets\images\certificates\11.jpg" alt="">
+                </div>
+                <div class="content p-3">
+                    <p class="text-black-50 mb-3">Certificate to pass the arbitration of investment disputes, & drafting contracts.</p>
+                </div>
+            </div>
+
+
+            <div class="post p-0">
+                <div class="img">
+                    <img src="assets\images\certificates\12.jpg" alt="">
+                </div>
+                <div class="content p-3">
+                    <p class="text-black-50 mb-3">Thanks and appreciation for your role in supporting Arab-African investment and international cooperation.</p>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+</div>
+<!-- 
+<div class="business py-5 section" #business>
+    <div class="container">
+        <h2 class="text-center mb-3">Achievements & Awards</h2>
+        <div class="gridy">
+            <div class="g-item">
+                <div class="img">
+                    <img class="img-fluid" src="assets\images\certificates\1.jpg" alt="">
+                </div>
+                <div class="text px-2 py-3 mt-3">
+                    <p class="mb-0 ">Certificate of passing the arbitration program in investment disputes and the form of legal contracts.</p>
+                </div>
+            </div>
+            <div class="g-item">
+                <div class="img">
+                    <img class="img-fluid" src="assets\images\certificates\2.png" alt="">
+                </div>
+                <div class="text px-2 py-3 mt-3">
+                    <p class="mb-0 ">Certificate to Cooperate with Animal Health Research Institute.</p>
+                </div>
+            </div>
+            <div class="g-item">
+                <div class="img">
+                    <img class="img-fluid" src="assets\images\certificates\3.png" alt="">
+                </div>
+                <div class="text px-2 py-3 mt-3">
+                    <p class="mb-0 ">Certificate to Pass the arbitration program for investment disputes and drafting legal contracts.
+                    </p>
+                </div>
+            </div>
+            <div class="g-item">
+                <div class="img">
+                    <img class="img-fluid" src="assets\images\certificates\4.jpg" alt="">
+                </div>
+                <div class="text px-2 py-3 mt-3">
+                    <p class="mb-0 ">Certificate to Attend the integrated training program to deepen the idea of self-employment.
+                    </p>
+                </div>
+            </div>
+
+            <div class="g-item">
+                <div class="img">
+                    <img class="img-fluid" src="assets\images\certificates\5.png" alt="">
+                </div>
+                <div class="text px-2 py-3 mt-3">
+                    <p class="mb-0 ">Certificate to protect the immune system and improve poultry productivity.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="g-item">
+                <div class="img">
+                    <img class="img-fluid" src="assets\images\certificates\6.jpg" alt="">
+                </div>
+                <div class="text px-2 py-3 mt-3">
+                    <p class="mb-0 ">Certificate for contribution in the field of veterinary convoys.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="g-item">
+                <div class="img">
+                    <img class="img-fluid" src="assets\images\certificates\7.jpg" alt="">
+                </div>
+                <div class="text px-2 py-3 mt-3">
+                    <p class="mb-0 ">Certificate to pass the arbitration advisors preparation program approved by the International Arbitration Commission.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="g-item">
+                <div class="img">
+                    <img class="img-fluid" src="assets\images\certificates\8.jpg" alt="">
+                </div>
+                <div class="text px-2 py-3 mt-3">
+                    <p class="mb-0 ">Certificate to participate in attending the activities of the first qualifying session.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="g-item">
+                <div class="img">
+                    <img class="img-fluid" src="assets\images\certificates\9.png" alt="">
+                </div>
+                <div class="text px-2 py-3 mt-3">
+                    <p class="mb-0 ">Certificate of a course in the foundations of successful trading with China.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="g-item">
+                <div class="img">
+                    <img class="img-fluid" src="assets\images\certificates\10.png" alt="">
+                </div>
+                <div class="text px-2 py-3 mt-3">
+                    <p class="mb-0 ">Certificate to attend events of Arab-African investment and international cooperation.
+                    </p>
+                </div>
+            </div>
+
+            <div class="g-item">
+                <div class="img">
+                    <img class="img-fluid" src="assets\images\certificates\11.JPG" alt="">
+                </div>
+                <div class="text px-2 py-3 mt-3">
+                    <p class="mb-0 ">Certificate to pass the arbitration of investment disputes, & drafting contracts.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="g-item">
+                <div class="img">
+                    <img class="img-fluid" src="assets\images\certificates\12.jpg" alt="">
+                </div>
+                <div class="text px-2 py-3 mt-3">
+                    <p class="mb-0 ">Thanks and appreciation for your role in supporting Arab-African investment and international cooperation.</p>
+                </div>
+            </div>
+
+
+        </div>
+        
+        
+    </div>
+</div>  -->

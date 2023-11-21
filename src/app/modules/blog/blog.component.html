@@ -1,0 +1,140 @@
+
+
+
+<div class="heading py-4">
+    <div class="container">
+        <h1 class="text-capitalize fw-bold">blog</h1>
+    </div>
+</div>
+
+<div class="banner">
+    <div class="container">
+        <div class="img">
+            <img class="img-fluid" src="assets\images\blog.jpg" alt="">
+        </div>
+    </div>
+</div>
+<div class="posts py-5">
+    <div class="container">
+        <div class="gridy mx-auto">
+
+
+            <div class="post p-0" *ngFor="let new of all_news">
+                <div class="img">
+                    <img  *ngIf="new.image_url" [defaultImage]="'../../../assets/lazy.png'" [lazyLoad]="new.image_url" alt="blog picture">
+                </div>
+                <div class="content p-3">
+                    <h5 class="fw-bold text-center mb-3">{{new.title}}</h5>
+                    <p class="text-black-50 mb-3">
+                        {{new.shortdescription}}
+                    </p>
+                    <a routerLink="/BlogDetails/{{new.id}}">Read more</a> 
+
+                </div>
+            </div>
+
+
+
+            <!-- <div class="post p-0">
+                <div class="img">
+                    <img src="assets\images\blog\6.jpeg" alt="">
+                </div>
+                <div class="content p-3">
+                    <h5 class="fw-bold text-center mb-3">Dr. Gamal Elkenany participates in the 57th periodic meeting of “the ARAB SPECIALIZED FEDERATIONS” with the delegation of the Union of Arab Women Investors</h5>
+                    <p class="text-black-50 mb-3" *ngIf="!showFullText">
+                        The delegation of the Union of Arab Women Investors, headed by Dr. Huda Yassa, participated in the meetings of the 57th session of specialized Arab federations in Jordan under the patronage of Senate Speaker Faisal Al-Fayez. Its work was inaugurated by Ambassador Ahmed Al-Nai, Secretary General of the Council of Arab Economic Unity.             
+                    
+                    </p>
+                    <a  (click)="toggleText()" style="color: blue;text-decoration: underline;cursor: pointer;">{{ showFullText ? 'Read less' : 'Read more' }}</a>
+
+                    <p class="text-black-50 mb-3" *ngIf="showFullText">
+                            The delegation of the Union of Arab Women Investors, headed by Dr. Huda Yassa, participated in the meetings of the 57th session of specialized Arab federations in Jordan under the patronage of Senate Speaker Faisal Al-Fayez. Its work was inaugurated by Ambassador Ahmed Al-Nai, Secretary General of the Council of Arab Economic Unity.
+                            The delegation of the federation included: Loay Abdel Rahman, Chairman of the Sustainable Development Committee, Engineer Ali Zain Al-Ayedbin, Chairman of the Energy Committee, Dr. Gamal Elkenany, Vice-Chairman of the Agriculture Committee, Engineer Mahmoud Al-Arabi, Member of the Construction and Building Committee, Saudi Sayed Muhammad, Member of the Businessmen Committee, Mazen Al-Naqeeb, Executive Director of the Union of Arab Investors, Hadeel Abdel-Karim, member of the Union.
+                            Dr. Hoda Yasa, emphasized In her speech the importance of complementary industries in each country and industrial integration between Arab countries, and the importance of private sector cooperation such as unions. Each union is distinguished by the presence of members who have an advantage and compete in a particular industry or trade. Internal and valuable in the international region, and this is called the cluster of blocs and trade and economic exchange between countries.
+                            Dr. Hoda Yassa highlights the advantages of investing in Jordan through 51 international agreements, in addition to the fact that manufacturing in Jordan or joint manufacturing in it opens up for these industries entry to the American markets without customs duties, through a free trade agreement with America, Canada and some countries of the European Union.
+                            Dr. Huda Yassa concluded her speech with the importance of formulating an advanced strategy to create an attractive climate for investment in our Arab countries and concerted efforts to promote inter-Arab investments.          
+                     </p>
+
+                </div>
+            </div>
+
+            <div class="post p-0">
+                <div class="img">
+                    <img src="assets\images\blog\5.jpeg" alt="">
+                </div>
+                <div class="content p-3">
+                    <h5 class="fw-bold text-center mb-3">EL-Kenany: all the food industries around the world under one roof, Gulfood 2023</h5>
+                    <p class="text-black-50 mb-3">“Controlling the commodities crisis is an imperative”
+                        El -Kenany participated in the Gulfood exhibition in its 28th edition, which is the largest annual and largest global forum that includes the leaders of the food sector and supports the field of supply in the food industries around the world on February 20 until February 24 at the Dubai World Trade Center in the United Arab Emirates.
+                        <a target="_blank" href="https://elkenanygroup.com/el-kenany-all-the-food-industries-around-the-world-under-one-roof-gulfood-2023/">Read more</a> 
+                        </p>
+                </div>
+            </div>
+
+                    <div class="post p-0">
+                <div class="img">
+                    <img src="assets\images\blog\44.png" alt="">
+                </div>
+                <div class="content p-3">
+                    <h5 class="fw-bold text-center mb-3">DR. Gamal El-Kenany says some remarks on Bitary today’s radio</h5>
+                    <p class="text-black-50 mb-3">“Controlling the commodities crisis is an imperative”
+                        Dr. Gamal El-Kenany Chairman of the Board of Directors of the El-Kenany Group for Industry and Investment highlights some remarks to “Bitary today radio” indicated in his phone call to the latest news program, “Bitary today”, with journalism Nihad Abdel-Gawad, that forage raw materials crisis has reached its climax, and that the prices of commodities will decrease in the coming period and will not witness a new rise in prices. Prices and it won’t get any worse.
+                        <a target="_blank" href="https://elkenanygroup.com/dr-gamal-el-kenany-says-some-remarks-on-bitary-todays-radio/">Read more</a> 
+                        </p>
+                </div>
+            </div>
+    
+                        <div class="post p-0">
+                <div class="img">
+                    <img src="assets\images\blog\33.png" alt="">
+                </div>
+                <div class="content p-3">
+                    <h5 class="fw-bold text-center mb-3">Al-Kenany participates in Agrena International Exhibition 2022</h5>
+                    <p class="text-black-50 mb-3">El-Kenany Group for Industry and Investment was keen to attend the Agrena International Exhibition for Management and Production of Poultry, Livestock, and Fish in its twenty-second session from 13 to 15 October 2022, which was at the Egypt International Exhibition Center in the Fifth Settlement in the first and second hall          
+                        <a target="_blank" href="https://elkenanygroup.com/al-kenany-participates-in-agrena-international-exhibition-2022/">Read more</a> 
+                        </p>
+                </div>
+            </div>
+
+                       <div class="post p-0">
+                <div class="img">
+                    <img src="assets\images\blog\2.jpg" alt="">
+                </div>
+                <div class="content p-3">
+                    <h5 class="fw-bold text-center mb-3">Dr.Gamal El-kenany: seeking to contribute to poultry sector development</h5>
+                    <p class="text-black-50 mb-3">Dr. Gamal El-Kinany emphasized his interest in developing the poultry sector and his quest to contribute to & support it, so the CEO of Al-Kenany Group decided to attend the most significant event in the history of the poultry industry, which is the annual meeting of the pioneers of the poultry industry in Egypt and the Arab world          
+                        <a target="_blank" href="https://elkenanygroup.com/dr-gamal-el-kenany-seeking-to-contribute-to-poultry-sector-development/">Read more</a> 
+                        </p>
+                </div>
+            </div>
+ 
+            <div class="post p-0">
+                <div class="img">
+                    <img src="assets\images\blog\1.jpeg" alt="">
+                </div>
+                <div class="content p-3">
+                    <h5 class="fw-bold text-center mb-3">El-kenany Group Ukraine corn ship in Damietta port</h5>
+                    <p class="text-black-50 mb-3">Dr. Gamal El-Kenany, CEO of El-Kenany Group, confirmed that he went to the port of Damietta on Thursday, June 23, 2022, to receive the incoming Ukrainian corn ship and check its quality because the most important value we offer to our valued customers is the quality of commodities that we provide in the Egyptian market            
+                        <a target="_blank" href="https://elkenanygroup.com/el-kenany-group-ukraine-corn-ship-in-damietta-port/">Read more</a> 
+
+                        </p>
+                </div>
+            </div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,223 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import 'animate.css';
+html, body , *{
+  scroll-behavior: smooth;
+  animation: fadeIn;
+  animation-duration: 0.5s;
+  // width: 100%;
+}
+// body::-webkit-scrollbar{
+//   display:none;
+//   visibility: hidden;
+// }
+/* Additional styles for WebKit browsers to prevent a white gap where the scrollbar was */
+html, body {
+  overflow: auto;
+}
+.add__details__main {
+    margin: 3rem auto;
+    .user__data p,i{
+      color: #8D8D8D;
+    }
+  }
+  
+  .main__title {
+
+    font: normal normal 900 30px/70px beIN;
+  }
+  
+  .small__bar__container {
+    .price__container {
+      padding: 0.6rem;
+      text-align: center;
+      background: #DCDCDC ;
+      box-shadow: 0px 3px 6px #00000033;
+      border-radius: 16px;
+  
+      .price__content {
+        font-size: 1.7rem;
+        font-weight: 900;
+        direction: rtl;
+        margin-bottom: 0;
+        color: #FF0D0D;
+      }
+    }
+  
+    .single__action {
+      padding: 0.8rem;
+      text-align: center;
+      border-radius: 16px;
+      margin: 0.8rem auto;
+      color: white;
+      direction: rtl;
+      display: flex;
+      justify-content: flex-start;
+      align-items: baseline;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0px 3px 6px #00000029;
+      cursor: pointer;
+  
+      .icon {
+        margin-left: 1rem;
+      }
+  
+      &:hover {
+      }
+    }
+  
+    .address__map {
+    //   background-image: url("../../../../images/market/semi-map.png");
+      background-size: 100% 100%;
+      background-color: #eee;
+      padding: 12px;
+      border-radius: 16px;
+        box-shadow: 0px 3px 6px #00000033;
+  
+      p {
+        margin-bottom: 0;
+      }
+  
+      .overlay {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        direction: rtl;
+        padding: 10px 5px;
+        background: rgb(220, 220, 220,0.7);
+        border-radius: 16px;
+        box-shadow: 0px 3px 6px #00000033;
+  
+        .map__icon {
+          width: 14%;
+  
+          .icon {
+            font-size: 2rem;
+          }
+        }
+  
+        .address__data {
+          width: 84%;
+          font-size: 12px;
+  
+          .address__content {
+  
+          }
+  
+          .address__link {
+            color: #474747;
+  
+            &:hover {
+            }
+          }
+        }
+      }
+  
+    }
+  
+    .user__info {
+      p {
+        margin-bottom: 0;
+      }
+  
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      direction: rtl;
+      background: #EEE;
+      padding: 0.6rem;
+      border-radius: 12px;
+      margin: 1rem auto;
+  
+      .user__icon {
+        width: 14%;
+  
+        .icon {
+          font-size: 2rem;
+        }
+      }
+  
+      .user__data {
+        width: 84%;
+        padding: 0 0.5rem;
+  
+        // .user__name {
+        //   font-size: $fs-18;
+        // }
+  
+        .user__date {
+          font-size: 12px;
+  
+        }
+      }
+    }
+  }
+  
+  .images__slider__top__single {
+    margin: auto;
+    text-align: center;
+  
+    .single__slide {
+      margin: auto;
+      text-align: center;
+  
+      img {
+        display: inline-block;
+        width: 600px;
+        height: 600px;
+        max-width: 600px;
+        max-height: 600px;
+      }
+    }
+  
+    .slick-arrow {
+      display: none;
+    }
+  }
+  
+  
+  .images__slider {
+    direction: ltr;
+    width: 100%;
+    padding: 0 50px;
+    margin: 2rem auto;
+  
+    .slick-list {
+      height: 150px !important;
+    }
+  
+    .single__slide {
+      outline: none;
+      position: relative;
+      margin: 0 1.5rem !important;
+      width: 110px !important;
+  
+      .logo__holder {
+        width: 150px;
+        height: 150px;
+        padding: 1rem;
+        border-radius: 24px;
+        margin: 0 auto;
+        outline: none;
+        cursor: pointer;
+  
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 12px;
+          transition: all .5s;
+        }
+  
+        &:hover img {
+          transform: scale(1.09, 1.09);
+        }
+      }
+  
+  
+    }
+  
+
+
+  }
+  
+
