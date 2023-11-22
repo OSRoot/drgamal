@@ -128,7 +128,8 @@ export class AppComponent {
       }
       else if(item.label=='about'){
         this.router.navigate(['']);
-        this.scroll.scrollToPosition([0,435+item.offset]);
+        // this.scroll.scrollToPosition([0,435+item.offset],);
+        // this.scrollToAbout()
       }
       else if(item.label=='Founder Of'){
         this.router.navigate(['']);
@@ -147,8 +148,9 @@ export class AppComponent {
       }
       else if(item.label=='contact'){
         this.router.navigate(['']);
-        this.scroll.scrollToPosition([0,2974+item.offset]);
-      }
+        // Scroll to the end of the page
+      this.scroll.scrollToPosition([0, document.body.scrollHeight]);
+      } 
   }
 
   onSubmit(): void {
@@ -170,4 +172,6 @@ export class AppComponent {
       }
     );
   }
+
+
 }

@@ -6,7 +6,7 @@
             <div class="content col-md-7 text-md-start text-center mb-md-0 mb-4  px-4 px-md-0">
                 <h1 class="mb-3">Dr.Gamal ElKenany</h1>
                 <p class="mb-3 mx-md-0 ">Chairman of ElKenany Group</p>
-                <a (click)="setActive({ label: 'about', isActive: true ,offset:0})" class="d-inline-block px-4 py-2" style="cursor: pointer;">Know more</a>
+                <a (click)="setActive({ label: 'about', isActive: true ,offset:0})" class="d-inline-block px-4 py-2" style="cursor: pointer;" >Know more</a>
             </div>
             <div class="img col-md-5 h-100">
                 <img class="d-block dr-image " src="../../../assets/images/dr.png" alt="">
@@ -15,9 +15,9 @@
         </div>
     </div>
 </div>
-<div class="about py-5 section" #about>
+<div class="about py-5 section" id="about">
     <div class="container">
-        <div class="row justify-content-md-between ">
+        <div class="row justify-content-md-between "  >
             <div class=" col-lg-5 col-md-5 mb-md-0 mb-4 ">
 
                     <div class="video my-5 my-xs-1 ">
@@ -26,7 +26,7 @@
                     </div>
 
             </div>
-            <div class="content col-md-6">
+            <div class="content col-md-6" #about>
                 <h2 class="mb-3">About Gamal ElKenany</h2>
                 <p class="text-black-50 fs-5" >
                     {{info.about.about}}
@@ -60,28 +60,32 @@
 
                 <div class="left p-0 col-md-5 d-md-block d-none">
                     <!-- ////////////////////////////////////kenany -->
-                    <div class="img mb-3">
-                        <img class="img-fluid" [src]="info.founder_of[2].image_url" alt="">
-                    </div>
+                    
                     <span class="d-block text-center py-2 mb-3">
                         <div class="img mb-3">
                             <a target="_blank" [href]="info.founder_of[2].link"><img class="img-fluid" [src]="info.founder_of[2].logo_url" alt=""></a>
                         </div>
                     </span>
+
+                    <div class="img mb-3">
+                        <img class="img-fluid" [src]="info.founder_of[2].image_url" alt="">
+                    </div>
+
                     <p class="mb-3">
                        {{info.founder_of[2].description}}
                     </p>
 
                     <!-- ////////////////////////////////////gmt -->
 
-                    <div class="img mb-3">
-                        <img class="img-fluid" src="{{info.founder_of[3].image_url}}" alt="">
-                    </div>
+                    
                     <span class="d-block text-center py-2 mb-3">
                         <div class="img mb-3">
                             <a target="_blank" [href]="info.founder_of[3].link"><img class="img-fluid" src="{{info.founder_of[3].logo_url}}"  alt=""></a>
                         </div>
                     </span>      
+                    <div class="img mb-3">
+                        <img class="img-fluid" src="{{info.founder_of[3].image_url}}" alt="">
+                    </div>
                     <p class="mb-3">
                         {{info.founder_of[3].description}}
                     </p>
@@ -116,13 +120,14 @@
                             <a target="_blank" [href]="info.founder_of[4].link"><img class="img-fluid" src="{{info.founder_of[4].logo_url}}" alt=""></a>
                         </div>
                     </span>
+                    <div class="img mb-3">
+                        <img class="img-fluid" src="{{info.founder_of[4].image_url}}" alt="">
+                    </div>
                     <p class="mb-md-3 mb-0">
                         {{info.founder_of[4].description}}
                     </p>
 
-                    <div class="img mb-3">
-                        <img class="img-fluid" src="{{info.founder_of[4].image_url}}" alt="">
-                    </div>
+                    
                     <!-- /////////////////////////////////// -->
                 </div>
 
@@ -136,13 +141,14 @@
                                 <a target="_blank" [href]="com.link"><img class="img-fluid" [src]="com.logo_url" alt=""></a>
                             </div>
                         </span>
+                        <div class="img mb-3">
+                            <img class="img-fluid" [src]="com.image_url" alt="">
+                        </div>
                         <p class="mb-3 ">
                             {{com.description}}
                         </p>
 
-                        <div class="img mb-3">
-                            <img class="img-fluid" [src]="com.image_url" alt="">
-                        </div>
+                        
 
                         <div class="line"></div>
 

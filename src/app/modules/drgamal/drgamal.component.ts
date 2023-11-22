@@ -32,7 +32,16 @@ export class DrgamalComponent {
 
 
   }
-
+  scrollToAbout() {
+    // Scroll to the "aboutSection" element using window.scrollTo
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      window.scrollTo({
+        top: aboutSection.offsetTop,
+        behavior: 'smooth' // You can try 'auto' or 'smooth' here
+      });
+    }
+  }
   setActive(item:any) {
 
   
@@ -44,7 +53,8 @@ export class DrgamalComponent {
       this.scroll.scrollToPosition([0,item.offset]);
       }
       else if(item.label=='about'){
-        this.scroll.scrollToPosition([0,535+item.offset]);
+        // this.scroll.scrollToPosition([0,535+item.offset]);
+        this.scrollToAbout()
       }
       else if(item.label=='Founder Of'){
         this.scroll.scrollToPosition([0,1075+item.offset]);
