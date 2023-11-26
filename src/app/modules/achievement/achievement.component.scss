@@ -54,3 +54,7 @@ img{
     transition: 0.3s;
     // object-fit: contain;
 }
+.img-bannar{
+    @media(max-width: 768px){}
+    object-fit: cover !important;
+}
