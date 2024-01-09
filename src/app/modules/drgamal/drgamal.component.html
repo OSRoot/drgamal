@@ -9,7 +9,7 @@
                 <a (click)="setActive({ label: 'about', isActive: true ,offset:0})" class="d-inline-block px-4 py-2" style="cursor: pointer;" >Know more</a>
             </div>
             <div class="img col-md-5 h-100">
-                <img class="d-block dr-image " src="../../../assets/images/Dr Gamal Elkenany chariaman elkenany holding company الدكتور جمال الكناني رئيس شركة الكناني القابضة.png" alt="">
+                <img class="d-block dr-image " [src]="info.images.doctor.image_url" alt="">
                 <!-- <img class="d-md-block d-none d-lg-none" src="assets/images/drgamal3.png" alt=""> -->
             </div>
         </div>
@@ -22,8 +22,7 @@
 
             <div class="content col-md-6" #about>
                 <h2 class="mb-3">About Gamal ElKenany</h2>
-                <p class="text-black-50 fs-5" >
-                    {{info.about?.about}}
+                <p class="text-black-50 fs-5" [innerHTML]="info.about?.about">
             </div>
 
             <div class=" col-lg-5 col-md-5 mb-md-0 mb-4 ">
